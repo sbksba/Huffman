@@ -71,16 +71,17 @@ runDec:
 	@echo ""
 	@echo "        DECOMPRESSION          "
 	@echo ""
-	@echo "# Test Decompression : test.txt.huff"
+	@echo "# Test Decompression : test.txt.huff => test.txt.decomp"
 	@./$(BIN)/$(EXEC) -d test/test.txt.huff
-	@echo "# Test Decompression : test.doc.huff"
+	@echo "# Test Decompression : test.doc.huff => test.doc.decomp"
 	@./$(BIN)/$(EXEC) -d test/test.doc.huff
-	@echo "# Test Decompression : test.csv.huff"
+	@echo "# Test Decompression : test.csv.huff => test.csv.decomp"
 	@./$(BIN)/$(EXEC) -d test/test.csv.huff
-	@echo "# Test Decompression : test.avi.huff"
+	@echo "# Test Decompression : test.avi.huff => test.avi.decomp"
 	@./$(BIN)/$(EXEC) -d test/test.avi.huff
-	@echo "# Test Decompression : test.mp4.huff"
+	@echo "# Test Decompression : test.mp4.huff => test.mp4.decomp"
 	@./$(BIN)/$(EXEC) -d test/test.mp4.huff
 	@echo ""
+	@ls -l test
 
 bench: all runCom runDec cleanall

@@ -60,6 +60,9 @@ runCom:
 	@echo "# Test Compression : test.csv"
 	@./$(BIN)/$(EXEC) -c test/test.csv
 	@echo ""
+	@echo "# Test Compression : test (binary)"
+	@./$(BIN)/$(EXEC) -c test/test
+	@echo ""
 	@echo "# Test Compression : test.avi"
 	@./$(BIN)/$(EXEC) -c test/test.avi
 	@echo ""
@@ -77,6 +80,8 @@ runDec:
 	@./$(BIN)/$(EXEC) -d test/test.doc.huff
 	@echo "# Test Decompression : test.csv.huff => test.csv.decomp"
 	@./$(BIN)/$(EXEC) -d test/test.csv.huff
+	@echo "# Test Decompression : test.huff => test.decomp (binary)"
+	@./$(BIN)/$(EXEC) -d test/test.huff
 	@echo "# Test Decompression : test.avi.huff => test.avi.decomp"
 	@./$(BIN)/$(EXEC) -d test/test.avi.huff
 	@echo "# Test Decompression : test.mp4.huff => test.mp4.decomp"

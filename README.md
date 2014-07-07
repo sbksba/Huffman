@@ -61,8 +61,6 @@ Normes utilisées
 Licence
 -------
 
-## Licence
-
 (Licence MIT)
 
 Copyright © sbksba

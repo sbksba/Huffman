@@ -27,28 +27,28 @@ __Structure du dictionnaire__
 DEFINITIONS
 -----------
 
-> SOURCE_NON_TROUVEE -1
-> CIBLE_NON_GENEREE -2
-> MAX_SYMBOLES 256
-> MAX_OCCURENCES 255
-> MAX_NOM 255
-> GAUCHE 0
-> DROITE 1
+> SOURCE_NON_TROUVEE -1    
+> CIBLE_NON_GENEREE -2    
+> MAX_SYMBOLES 256    
+> MAX_OCCURENCES 255    
+> MAX_NOM 255    
+> GAUCHE 0    
+> DROITE 1    
 
 VARIABLES GLOBALES
 ------------------
 
-> unsigned int NbOctFichierAComp=0;
-> unsigned int NbOctFichierADecomp=0;
-> unsigned int NbOctEntete=0;
-> unsigned int NbOctDonnees=0;
-> unsigned int NbSymboles=0;
-> unsigned int MaxOcurrences=0;
-> unsigned int MaxNbBits=0;
-> unsigned int TabNbBits=0;
-> unsigned int TabOcurrences[MAX_SYMBOLES];
-> struct arbre_huffman *TabArbres[MAX_SYMBOLES], *Racine=NULL;
-> struct dico Dictionnaire[MAX_SYMBOLES];
+> unsigned int NbOctFichierAComp=0;    
+> unsigned int NbOctFichierADecomp=0;    
+> unsigned int NbOctEntete=0;    
+> unsigned int NbOctDonnees=0;    
+> unsigned int NbSymboles=0;    
+> unsigned int MaxOcurrences=0;    
+> unsigned int MaxNbBits=0;    
+> unsigned int TabNbBits=0;    
+> unsigned int TabOcurrences[MAX_SYMBOLES];    
+> struct arbre_huffman *TabArbres[MAX_SYMBOLES], *Racine=NULL;    
+> struct dico Dictionnaire[MAX_SYMBOLES];    
  
 HUFFMAN.H
 -----------
